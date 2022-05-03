@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../lib/index.css">
+    <!-- import Vue before Element -->
+    <script src="../lib/vue_2.5.22.js"></script>
+    <!-- 引入组件库 -->
+    <script src="../lib/index.js"></script>
+
+    <!-- import CSS -->
+    <!--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+
+    <!-- import JavaScript -->
+    <!--    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+</head>
+<body>
+<div id="app">
+
+
+    <div class="demo-info">
+        <h2>Biography</h2>
+        I am currently a Ph.D. student at
+        <el-link type="primary" href="https://www.csu.edu.cn/" :target="targetType">Central South University</el-link>
+        advised by Prof.
+        <el-link type="primary" href="https://faculty.csu.edu.cn/jiaweihuang/zh_CN/index.htm" :target="targetType">Jiawei Huang</el-link>
+        .
+        I am a visiting student at <el-link type="primary" href="https://www.sutd.edu.sg/" :target="targetType">Singapore University of Technology and Design</el-link> advised by Prof.
+        <el-link type="primary" href="https://sites.google.com/site/jiangwenchao88/" :target="targetType">Wenchao Jiang</el-link>
+        .
+        I received my B.E. in Information Security from Central South University in 2016.
+        My research interests include data center networks, Internet video, and distributed machine learning.
+        My research work has been published in many top conferences and journals, such as ICNP, ICDCS, and ToN, TCC, WCL.
+
+
+        <h2>Education</h2>
+<pre><ul class="edu-info">
+<li>Central South University (CSU)                                 Changsha,China</br>Ph.D. in Computer Science and Technology                       Sept. 2018 – Present</li><li>Singapore University of Technology and Design(SUTD)            Singapore</br>Visiting student                                               July 2021- present</li><li>Central South University (CSU)                                 Changsha,China</br>M.E. in Computer Science and Technology                        Sept. 2016 - June 2018</li><li>Central South University (CSU)                                 Changsha,China</br>B.S. in Information Security                                   Sept. 2012 - June 2016</li>
+</ul></pre>
+    <h2>News</h2>
+        <ul>
+            <li>May 2022    1st-author paper <b>EFQ*</b> accepted to ACM/IEEE ToN.</li>
+            <li>Apr 2022    1st-author paper <b>BBA+</b> accepted to IEEE WCL.</li>
+            <li>Feb 2022    Co-authored paper accepted to IEEE ICME.</li>
+            <li>Jan 2022    1st-author paper <b>DLCC</b> accepted to IEEE COMML.</li>
+            <li>Aug 2021    Co-authored paper <b>GTCP</b> accepted to IEEE ICDCS.</li>
+            <li>Aug 2021    Co-authored paper <b>BMCC</b> accepted to IEEE ICDCS.</li>
+            <li>Jan 2021    1st-author paper accepted to Journal of Software.</li>
+            <li>Jul 2020    1st-author paper <b>EFQ</b> accepted to IEEE ICDCS.</li>
+            <li>Aug 2019    1st-author paper <b>AG</b> accepted to IEEE ICNP.</li>
+            <li>Mar 2019    1st-author paper <b>APS</b> accepted to IEEE TCC.</li>
+        </ul>
+    </div>
+
+</div>
+
+<style>
+    .demo-info {
+        /*margin-left: 3%;*/
+        text-align: left;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .edu-info {
+        /*margin-left: 3%;*/
+        text-align: left;
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+
+    body > .el-container {
+        margin-bottom: 40px;
+    }
+
+    .el-container:nth-child(5) .el-aside,
+    .el-container:nth-child(6) .el-aside {
+        line-height: 260px;
+    }
+
+    .el-container:nth-child(7) .el-aside {
+        line-height: 320px;
+    }
+
+
+
+</style>
+
+
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            targetType:"_blank"
+        }
+    })
+</script>
+</body>
+</html>
