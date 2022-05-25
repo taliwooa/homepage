@@ -1,164 +1,448 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-<head>
+  <head>
     <title>Jingling Liu</title>
-    <meta charset="UTF-8">
-    <!-- 引入样式 -->
-    <link rel="stylesheet" href="./lib/index.css">
-    <!-- import Vue before Element -->
-    <script src="./lib/vue_2.5.22.js"></script>
-    <!-- 引入组件库 -->
-    <script src="./lib/index.js"></script>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1"/>
+    <meta name="description" content="Jingling Liu - Central South University"/>
+    <meta name="keywords" content="Jingling Liu, Data Center networks, Internet Video, Distributed Machine Learning"/>
+		
+	  <style>				
+		  .my_text
+			{font-family: "Candara", "Arial", "Microsoft Yahei", sans-serif;
+			 font-size: .17in;
+			 width: 70%;
+			 background: #FFFFFF;
+			 align: center; 
+			 margin: auto;
+			 padding:20px 30px; 
+			} 
+	
+		</style>
+  </head>
 
-    <!-- import CSS -->
-<!--    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
+	<body bgcolor="#EEEEEE">
+			<div class="my_text">
+<!--
+		<div style="background:#FFFFFF; width:70%; align:center; margin: auto;
+				padding:20px 30px; font-size:.18in; font-family: "Candara";">
+				-->
+<!--
+				<table border="0" cellspacing="0" cellpadding="10">
+				<tr>
+				<td align="center" valign="middle">-->					
+				<img src="index_files/personal.png" style="padding-right:20px;
+				padding-bottom:20px; float:left" alt=''; height="180">
+				<!--</td>
+				<td>-->
+						<h2>Jingling Liu (刘敬玲)</h2>
+						Ph.D. student<br />
+						
+						Central South University
+						<br />
+						<br />            	
+						Email: jinglingliu@csu.edu.cn
+						<br />
+				<!--</td>
+			  </tr>	
+				</table><p>-->	
+				<!--<hr color="#B21317" size="2"style="border-style:dotted;" width="100%"/>
+				<p>
+				<font color="#B21317"><b>I am currently on the academic job market.</b></font>
+				
+				[<a href="application/ennan-cv.pdf">Curriculum Vitae</a>]
+				[<a href="application/ennan-research.pdf">Research Statement</a>]
+				[<a href="application/ennan-teaching.pdf">Teaching Statement</a>]
+				</p>
+				<font color="#B21317"><b>My three representative
+								publications:</b></font> 
+				[<a href="zhai14heading.pdf">INDaaS, OSDI'14</a>]
+				[<a href="zhai16anonrep.pdf">AnonRep, NSDI'16</a>]
+        [<a href="oopsla17-final.pdf">RepAudit, OOPSLA'17</a>]
+				</p>
+        -->
+				<hr color="#B21317" size="2"style="border-style:dotted;" width="100%"/>
 
-    <!-- import JavaScript -->
-<!--    <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
-</head>
-<body>
-<div id="app">
-
-
-    <el-container>
-        <el-header height="100px">
-            <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-                <el-menu-item index="1" @click="redirectHome">About</el-menu-item>
-                <el-menu-item index="2" @click="redirectPublications">Publications</el-menu-item>
-                <el-menu-item index="3" @click="redirectTalks">Talks</el-menu-item>
-
-
-            </el-menu>
-            <div class="line"></div>
-
-
-        </el-header>
-        <el-container>
-            <el-aside width="480px">
-                <div >
-                <div>
-                    <img src="lib/image/personal.png" width="200px">
-                </div>
-
-
-                    <div class="degreeText">
-                        <h3 style="margin-left: 8%">{{userName}}</h3>
-                    <template>{{degreeInfo}}</template>
-                    </div>
-
-                <div class="iconInfo">
-                <span class="iconfont">&#xe76f;</span><b>Location</b>: Changsha, China</i></br>
-                <span class="iconfont">&#xedc5;</span><b>Work Email</b>: jinglingliu@csu.edu.cn</i></br>
-                <span class="iconfont">&#xe678;</span><b>Personal Email</b>: jinglingliu00@gmail.com</i></br>
-            </div>
-                </div>
-
-
-            </el-aside>
-            <el-container>
-                <el-main>
-
-
-                    <iframe :src="iframeSrc" frameborder="false"
-                            style="top:80px;left: 120px; width: 100%;height:1000px"></iframe>
-
-
-                </el-main>
-
-            </el-container>
-        </el-container>
-    </el-container>
-
-
-</div>
-
-<style>
-    /*@import "lib/iconfont/iconfont.css";*/
-    @import "lib/iconfont/sum/iconfont.css";
-
-    [class^="el-icon-mo"], [class^=" el-icon-mo"] {
-        font-family: "iconfont", serif !important;
-        font-size: 16px;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-</style>
-
-<style>
+				<p>
+					I am currently a Ph.D. student at <a href="https://www.csu.edu.cn/">Central South University</a> advised by Prof. <a href="https://faculty.csu.edu.cn/jiaweihuang/zh_CN/index.htm">Jiawei Huang</a>.
+					I am a visiting student at <a href="https://www.sutd.edu.sg/" >Singapore University of Technology and Design</a> advised by Prof. <a href="https://sites.google.com/site/jiangwenchao88/">Wenchao Jiang</a>.
+					I received my B.E. in Information Security from Central South University in 2016.
+					My research interests include data center networks, Internet video, and distributed machine learning.
+					My research work has been published in many top conferences and journals, such as ICNP, ICDCS, and ToN, TCC, WCL.
+				</p>
 
 
+				
+				<hr color="#B21317" size="2"style="border-style:dotted;" width="100%"/>
+				<br>
+				<font size="5"><b>Selected Publications</b></font>
+				<!-- &nbsp&nbsp(<a href="http://dblp.uni-trier.de/pers/hd/z/Zhai:Ennan">My full publication list</a>) -->
+				</p>
+		
+
+				
+        <table border="0" cellspacing="0" cellpadding="10">
+     
+        <tr>
+	      <td align="left" valign="top">ToN'22</td>
+				<td>
+					 <i>Achieving Per-flow Fairness and High Utilization with Limited Priority Queues in Data Center.</i><br>
+					 <b>Jingling Liu</b>, Jiawei Huang, Zhaoyi Li, Yijun Li, Jianxin Wang, Tian He.<br>
+					 IEEE/ACM Transactions on Networking, 2022.<br>
+				</td>
+		</tr>
+
+        <tr>
+	      <td align="left" valign="top">WCL'22</td>
+				<td>
+					<i>A Buffer-Based Adaptive Bitrate Approach in Wireless Networks with Iterative Correction.</i><br>
+					<b>Jingling Liu</b>, Zhuoran Liu, Jiawei Huang, Wenchao Jiang, Jianxin Wang.<br>
+					IEEE Wireless Communications Letters, 2022.<br>
+				</td>
+		</tr>
+
+		<tr>
+			<td align="left" valign="top">ICME'22</td>
+				  <td>
+					  <i>Synthesizing Audio and Video Bitrate Selections via Learning From Actual Requirements.</i><br>
+					  Weihe Li, Jiawei Huang, Yu Liang, <b>Jingling Liu</b>, Feng Gao.<br>
+					  IEEE International Conference on Multimedia and Expo (<em>ICML</em>), 2022.<br>
+				  </td>
+		  </tr>
+
+		
+ 
+        <!-- <tr>
+	      <td align="left" valign="top">OOPSLA'21</td>
+				<td>
+				<i>Static Detection of Silent Misconfigurations with Deep
+					Interaction Analysis.</i><br>
+					 Jialu Zhang, Ruzica Piskac, 
+           Ennan Zhai, and Tianyin Xu.<br>
+					 36th ACM SIGPLAN International Conference on Object-Oriented
+					 Programming, Systems, Languages, and Applications
+					 (<em>OOPSLA'21</em>), Oct, 2021.<br>
+					 [<a href="pub/xconfig-oopsla21.pdf">PDF</a>] 
+				</td>
+		</tr>	 -->
+
+        <tr>
+	      <td align="left" valign="top">Comml'22</td>
+				<td>
+					 <i>End-to-End Congestion Control to Provide Deterministic Latency over Internet.</i><br>
+					 <b>Jingling Liu</b>, Jiawei Huang, Wenchao Jiang, Zhaoyi Li, Yijun Li, Wenjun Lyu, Wanchun Jiang, Jiao Zhang, Jianxin Wang.<br>
+					 IEEE Communications Letters, 2022<br>
+				</td>
+		</tr>
+
+        <tr>
+	      <td align="left" valign="top">TCC'22</td>
+				<td>
+					 <i>REN: Receiverdriven Congestion Control using Explicit Notification for Data Center.</i><br>
+					 Zhaoyi Li, Jiawei Huang, Jinbin Hu, Tao Zhang, Weihe Li, <b>Jingling Liu</b>, Jianxin Wang, Tian He.<br>
+					 IEEE Transactions on Cloud Computing, 2022.<br>
+				</td>
+		</tr>
+
+        <tr>
+	      <td align="left" valign="top">ICDCS'21</td>
+				<td>
+					<i>GTCP: Hybrid-Driven Congestion Control for Cross Datacenter Networks.</i><br>
+					Shaojun Zou, Jiawei Huang, <b>Jingling Liu</b>, Tao Zhang, Ning Jiang, Jianxin Wang, Tian He<br>
+					IEEE ICDCS, 2021.<br> 
+				</td>
+		</tr>
+
+        <tr>
+	      <td align="left" valign="top">ICDCS'21</td>
+				<td>
+					<i>Mitigating port starvation for shallowbuffered switches in datacenter networks.</i><br>
+					Wenjun Lyu, Jiawei Huang, <b>Jingling Liu</b>, Zhaoyi Li, Shaojun Zou, Weihe Li, Jianxin Wang, Desheng Zhang.<br>
+					IEEE ICDCS, 2021.<br>
+				</td>
+		</tr>
+
+        <tr>
+	      <td align="left" valign="top">Access'21</td>
+				<td>
+					<i>PSurvey on traffic management in data center network: from link layer to application layer.</i><br>
+					Weihe Li, <b>Jingling Liu</b>, Shiqi Wang, Tao Zhang, Shaojun Zou, Jinbin Hu, Wanchun Jiang, Jiawei Huang.<br>
+					IEEE Access, 2021.<br>
+				</td>
+		</tr>
+
+        <tr>
+	      <td align="left" valign="top">JONS’21</td>
+				<td>
+					<i>Achieving High Utilization by Elastic Chunk Scheduling in DASH Systems.</i><br>
+					Jiawei Huang, Zhuoran Liu, <b>Jingling Liu</b> (corresponding author), Weihe Li, Qichen Su, Jianxin Wang.<br>
+					Journal of Network and Systems Management, 2021.<br>
+				</td>
+		</tr>	
+
+        <tr>
+	      <td align="left" valign="top">软件学报'21</td>
+				<td>
+					<i>数据中心负载均衡方法研究.</i><br>
+					<b>刘敬玲</b>, 黄家玮，蒋万春，王建新.<br>
+					软件学报, 2021.<br>
+				</td>
+		</tr>	
+
+		<tr>
+	      <td align="left" valign="top">ICDCS'20</td>
+				<td>
+					<i>Achieving High Utilization for Approximate Fair Queueing in Data Center.</i><br>
+					<b>Jingling Liu</b>, Jiawei Huang, Ning Jiang, Weihe Li, Jianxin Wang.<br>
+					IEEE ICDCS, 2020.<br> 
+				</td>
+		</tr>	
+        
+		<tr>
+	      <td align="left" valign="top">TCC'20</td>
+				<td>
+					<i>APS: Adaptive Packet Spraying to Isolate Mix-flows in Data Center Network.</i><br>
+					<b>Jingling Liu</b>, Jiawei Huang, Wenjun Lv, Jianxin Wang.<br>
+					IEEE Transactions on Cloud Computing, 2020.<br>					 
+				</td>
+		</tr>	
 
 
-    .degreeText {
-        text-align: left;
+        <tr>
+	      <td align="left" valign="top">ICNP'19</td>
+				<td>
+					<i>AG: Adaptive Switching Granularity for Load Balancing with Asymmetric Topology in Data Center Network.</i><br>
+					<b>Jingling Liu</b>, Jiawei Huang, Weihe Li, Jianxin Wang.<br>
+					IEEE ICNP, 2019.<br>
+				</td>
+		</tr>	
 
-        line-height: 30px;
-        font-size: 16px;
-        margin-left: 25%;
-    }
-    .iconInfo{
-        text-align: left;
-        line-height: 45px;
-        font-size: 16px;
-        margin-left: 25%;
-    }
+		<tr>
+	      <td align="left" valign="top">APNet'19</td>
+				<td>
+					<i>DDT: Mitigating the Competitiveness Difference of Data Center TCPs.</i><br>
+					Tao Zhang, Jiawei Huang, Shaojun Zou, Sen Liu, Jinbin Hu, <b>Jingling Liu</b>, Chang Ruan, Jianxin Wang, Geyong Min.<br>
+					ACM APNet, 2019<br>
+				</td>
+		</tr>	
+		
+		<tr>
 
-    .el-header, .el-footer {
-        /*background-color: #B3C0D1;*/
-        background-color: transparent;
-        color: #333;
-        text-align: center;
-        line-height: 60px;
-    }
+	      <td align="left" valign="top">计算机工程'18</td>
+				<td>
+        			<i>数据中心网络中高并发TCP传输的随机退避方法.</i><br>
+					黄家玮, 郭月月, <b>刘敬玲</b>, 王建新.<br>
+					计算机工程, 2018.<br>
+				</td>
+		</tr>	
 
-    .el-aside {
-        background-color: transparent;
-        color: #333;
-        text-align: center;
-        line-height: 200px;
-    }
+        
+        <tr>
+	      <td align="left" valign="top">计算机教育'17</td>
+				<td>
+				<i>软件定义网络的实验教学方案设计.</i><br>
+				黄家玮, <b>刘敬玲</b>, 徐文茜, 李又明, 王建新.<br>
+				计算机教育, 2017.<br>
+				</td>
+		</tr>	
+
+		<!-- <tr>
+			<td align="left" valign="top">NSDI'23</td>
+				  <td>
+				  <i>MRQ: A Reordering Block for Programmable Packet Scheduling.</i><br>
+				  <b>Jingling Liu</b>, Jiawei Huang, Zihao Chen, Zhaoyi Li, Yijun Li, Wenchao Jiang, Jianxin Wang.<br>
+				  USENIX NSDI, 2023.<br>
+				  </td>
+		  </tr>	
+
+		  <tr>
+			<td align="left" valign="top">ToN'22</td>
+				  <td>
+				  <i>Asymmetry-aware Load Balancing with Adaptive Switching Granularity in Data Center.</i><br>
+				  <b>Jingling Liu</b>, Jiawei Huang, Weihe Li, Jianxin Wang, Tian He.<br>
+				  IEEE/ACM Transactions on Networking, 2022.<br>
+				  </td>
+		  </tr>	
+
+		  <tr>
+			<td align="left" valign="top">TCC'22</td>
+				  <td>
+				  <i>Achieving Fast Convergence and High Efficiency using Differential Explicit Feedback in Data Cente.</i><br>
+				  Jiawei Huang, <b>Jingling Liu</b>, Ning Jiang, Sen Liu, Jinbin Hu, Jianxin Wang.<br>
+				  IEEE Transactions on Cloud Computing, 2022.<br>
+				  </td>
+		  </tr>	 -->
+
+			
+		</table><p>	
+
+
+		<hr color="#B21317" size="2"style="border-style:dotted;" width="100%"/>
+		<h2>National Patents</h2>
+		<ul>
+			<li>
+				Congestion control method based on packet length in data center network
+			</li>
+			Jiawei Huang, <b>Jingling Liu</b>, Jianxin Wang</br>
+			
+		</ul>
+
+		<ul>
+			<li>
+				Packet scattering based heterogeneous stream isolation method in DCN (Data Center Network)
+			</li>
+			Jiawei Huang, <b>Jingling Liu</b>, Jinbin Hu, Wenjun Lv, Jianxin Wang</br>
+			
+		</ul>
+
+		<ul>
+			<li>
+				Fair bandwidth allocation method based on priority queue in data center network, switch and readable storage medium
+			</li>
+			Jiawei Huang, <b>Jingling Liu</b>, Ning Jiang, Weihe Li, Zhaoyi Li, Jianxin Wang</br>
+			
+		</ul>
+
+		<ul>
+			<li>
+				Coding-based packet scattering method in data center network
+			</li>
+			Jiawei Huang, Jinbin Hu, Wenjun Lv, <b>Jingling Liu</b>, Jianxin Wang</br>
+			
+		</ul>
+
+			 	
+		<hr color="#B21317" size="2"style="border-style:dotted;" width="100%"/>
+		<h2>Talks</h2>
+		<ul>
+			<p> 
+				<li>
+				 Achieving High Utilization for Approximate Fair Queueing in Data Center
+				</li>
+				IEEE ICDCS, 2020<br>
+				  December 2020, Virtual Event<br>
+	   </ul>
+ 
+	   <ul>
+		 <p> 
+			 <li>
+			 AG: Adaptive Switching Granularity for Load Balancing with Asymmetric Topology in Data Center Network
+			 </li>
+			 IEEE ICNP, 2019<br>
+			 October 2019, Chicago, USA<br>
+		</ul>
 
 
 
-    body > .el-container {
-        margin-bottom: 40px;
-    }
-
-    .el-container:nth-child(5) .el-aside,
-    .el-container:nth-child(6) .el-aside {
-        line-height: 260px;
-    }
-
-    .el-container:nth-child(7) .el-aside {
-        line-height: 320px;
-    }
+		<hr color="#B21317" size="2"style="border-style:dotted;" width="100%"/>
+		<h2>Teaching Experience</h2>
+    	<ul>
+			<p> 
+				<li>
+	    				Teaching Assistant, Computer Networking (Spring 2021, CSU), Instructor: Jianxin Wang
+				</li>	
+       </ul>
 
 
-</style>
+    <!-- <hr color="#B21317" size="2"style="border-style:dotted;" width="100%"/>
+			 
+    <h2>Professional Service</h2>
+      
+    	<ul>
+ 			<li>
+	    Program Committee: 
+			    <ul>
+							<li> 20th USENIX Symposium on Networked Design and 
+									 Implementation (NSDI'23)
+							</li>
+							<li>ACM SIGCOMM 2022 (SIGCOMM'22)
+							</li>
+              <li>8th ACM Symposium on SDN Research (SOSR'22)
+							</li>
+							<li> MobiSys EdgeSys'22 Workshop
+							</li>
+              <li>7th ACM Symposium on SDN Research (SOSR'21)
+							</li>
+							<li>9th ACM Symposium on Cloud Computing (SoCC'18)
+							</li>
+							<li> MobiSys CryBlock'18 Workshop
+							</li>
+							<li> MobiSys EdgeSys'18 Workshop
+							</li>
+							<li>6th International Conference on Networked Systems (NETYS'18)
+							</li>
+							<li>8th ACM Symposium on Cloud Computing (SoCC'17)
+							</li>
+							<li>SIGCOMM HotConNet'17 Workshop 
+							</li>
+							<li>13th International Conference on Distributed Computing and
+							Internet Technology (ICDCIT'17)
+							</li>
+							<li>21st ACM Symposium on Principles and Practice of Parallel
+							Programming (PPoPP'16) Artifact Evaluation
+							</li>	
+							
+			    </ul>
+			</li>
+			
+			<li>
+			Reviewer:
+          <ul>
+					<li>16th USENIX Symposium on Networked Design and Implementation
+					(NSDI'19)
+			    </li>		
+					<li>14th USENIX Symposium on Networked Design and Implementation
+					(NSDI'17)
+			    </li>
+					<li>26th European Symposium on Programming (ESOP'17)
+					</li>
+					<li>19th ACM Conference on Computer and Communications Security (CCS'12)
+					</li>
+					<li>20th IEEE International Conference on Computer Communication
+					Network (ICCCN'11)
+					</li>
+					
+					</ul>
+			</li>
+
+			<li>
+			Journal Reviewer: 
+		      <ul>
+          <li>IEEE/ACM Transactions on Networking (ToN)
+					</li>
+					<li>ACM Transactions on Privacy and Security (Formerly TISSEC)
+					</li>
+					<li>IEEE Transactions on Dependable and Secure Computing (TDSC)
+					</li>
+					<li>IEEE Transactions on Information Forensics & Security (TIFS)
+					</li>
+					<li>Peer-to-Peer Networking and Applications (PPNA)
+					</li>
+					</ul>	
+			</li>
+			</ul> -->
+    
+			<hr color="#B21317" size="2"style="border-style:dotted;" width="100%"/>
+			
+			<p>
+			Last Update: May 2022
+			</p>
+    </div>
 
 
+	
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+		Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<script>
-    new Vue({
-        el: "#app",
-        data: {
-            userName: "Jingling Liu (刘敬玲)",
-            degreeInfo: "Ph.D. student, Central South University",
-            iframeSrc: "./child_html/home.html"
-        },
-        methods: {
-            redirectHome() {
-                this.iframeSrc = "./child_html/home.html"
-            },
-            redirectPublications() {
-                this.iframeSrc = "./child_html/publications.html"
-            },
-            redirectTalks() {
-                this.iframeSrc = "./child_html/talks.html"
-            },
-        }
-    })
-</script>
-</body>
+	  ga('create', 'UA-1386981-4', 'auto');
+		ga('send', 'pageview');
+		</script>
+
+    </body>
 </html>
